@@ -30,3 +30,24 @@ body {
     max-width: 80px;
     float: inline-start;
   }
+
+  #Recipes {
+    margin: -280px 760px 0 0;
+    max-width: 80px;
+    float: right;
+    font-size: 20px;
+  }
+
+  #About {
+    margin: -280px 560px 0 0;
+    max-width: 80px;
+    float: right;
+    font-size: 20px;
+  }
+
+  #Resources {
+    margin: -280px 360px 0 0;
+    max-width: 80px;
+    float: right;
+    font-size: 15px;
+  }
