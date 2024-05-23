@@ -9,6 +9,20 @@ body {
     font-family: sans-serif;
     text-indent: 1.20in;
   }
+
+  h2 {
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    font-size: 200%;
+    font-family: sans-serif;
+    text-indent: 1.20in;
+    text-align: center;
+  }
+  p1 {
+    font-size: 140%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-indent: 1.20in;
+  }
   
   #content {
     margin: 10px;
@@ -78,4 +92,12 @@ body {
     color: white;
     padding: 10px 32px; /* this controls width and height of button */
    }
-  
+   
+   #output {
+    background-color: white;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 15px;
+    border: solid 1px black;
+    min-height: 100px;
+  }
