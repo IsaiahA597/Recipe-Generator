@@ -60,8 +60,22 @@ body {
    }
 
    #Recipe {
-    max-width: 80px;
-    margin: 530px 770px 0 0;
+    
+    margin: 530px 720px 0 0;
     float: right;
-    font-size: 20px;
+    font-size: 18px;
+    padding: 10px 40px; /* this controls width and height of button */
+
    }
+
+   .hidden {
+    visibility: hidden;
+   }  
+
+   #button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 32px; /* this controls width and height of button */
+   }
+  
