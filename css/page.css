@@ -46,21 +46,21 @@ body {
   }
 
   #Recipes {
-    margin: -720px 760px 0 0;
+    margin: -1080px 760px 0 0;
     max-width: 80px;
     float: right;
     font-size: 20px;
   }
 
   #About {
-    margin: -720px 560px 0 0;
+    margin: -1080px 560px 0 0;
     max-width: 80px;
     float: right;
     font-size: 20px;
   }
 
   #Resources {
-    margin: -720px 360px 0 0;
+    margin: -1080px 360px 0 0;
     max-width: 80px;
     float: right;
     font-size: 15px;
@@ -74,7 +74,6 @@ body {
    }
 
    #Recipe {
-    
     margin: 530px 720px 0 0;
     float: right;
     font-size: 18px;
@@ -109,3 +108,25 @@ body {
     border: solid 1px black;
     min-height: 100px;
   }
+
+  .box{
+    width: 200px;
+    height: 350px;
+    background-color: #333;
+    position: relative;
+    overflow: hidden;
+    visibility:hidden;
+  }
+  
+  .paper{
+    width: 180px;
+    height: 100px;
+    background-color: #fff;
+    position: absolute;
+    bottom:-100%;
+    left: 10px;
+    transition: bottom 1s ease-in-out;
+    visibility:visible;
+    z-index: 1;
+  }
+  
