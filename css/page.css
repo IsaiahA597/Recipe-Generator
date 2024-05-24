@@ -101,3 +101,11 @@ body {
     border: solid 1px black;
     min-height: 100px;
   }
+  #output1 {
+    background-color: white;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 15px;
+    border: solid 1px black;
+    min-height: 100px;
+  }
