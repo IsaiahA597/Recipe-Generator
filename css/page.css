@@ -64,7 +64,7 @@ p1 {
 
 .navbar button {
   background-color: #f8f8f8;
-  border: none;
+  border: solid 1px black;
   color: black;
   padding: 10px 20px;
   margin: 0 10px;
