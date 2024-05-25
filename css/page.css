@@ -112,18 +112,20 @@ p1 {
   height: 350px;
   background-color: #333;
   position: relative;
+  float:right;
   overflow: hidden;
   visibility: hidden;
 }
 
 .paper {
   width: 180px;
-  height: 100px;
+  height: 120px;
   background-color: #fff;
   position: absolute;
+  float:left;
   bottom: -100%;
-  left: 10px;
+  left: 145px;
   transition: bottom 1s ease-in-out;
   visibility: visible;
-  z-index: 1;
+  z-index: 7;
 }
