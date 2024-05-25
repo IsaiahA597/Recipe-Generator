@@ -1,132 +1,129 @@
 body {
-    background-color: #bac2c5;
-  }
-  
-  h1 {
-    letter-spacing: 5px;
-    word-spacing: 5px;
-    font-size: 200%;
-    font-family: sans-serif;
-    text-indent: 1.20in;
-  }
+  background-color: #bac2c5;
+}
 
-  h2 {
-    letter-spacing: 5px;
-    word-spacing: 5px;
-    font-size: 200%;
-    font-family: sans-serif;
-    text-indent: 1.20in;
-    text-align: center;
-  }
-  p1 {
-    font-size: 140%;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-indent: 1.20in;
-  }
-  
-  #content {
-    margin: 10px;
-    padding: 10px;
-    border: solid 1px #000000;
-    background-color: #bac2c5;
-  }
-  
-  .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #000000;
-    background-color: #bac2c5;
-  }
+h1 {
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  font-size: 200%;
+  font-family: sans-serif;
+  margin: 0;
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
 
-  #food-logo {
-    margin: -30px 0 0 0;
-    padding: -30px 0 0 0;
-    max-width: 80px;
-    float: inline-start;
-  }
+h2 {
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  font-size: 200%;
+  font-family: sans-serif;
+  text-align: center;
+}
 
-  #Recipes {
-    margin: -1080px 760px 0 0;
-    max-width: 80px;
-    float: right;
-    font-size: 20px;
-  }
+p1 {
+  font-size: 140%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-indent: 1.20in;
+}
 
-  #About {
-    margin: -1080px 560px 0 0;
-    max-width: 80px;
-    float: right;
-    font-size: 20px;
-  }
+#content {
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px #000000;
+  background-color: #bac2c5;
+}
 
-  #Resources {
-    margin: -1080px 360px 0 0;
-    max-width: 80px;
-    float: right;
-    font-size: 15px;
-  }
+.minor-section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #000000;
+  background-color: #bac2c5;
+}
 
-  #recipe-box {
-    max-width: 400px;
-    position: relative;
-    left: 450px; 
-    bottom: -80px;
-   }
+#food-logo {
+  max-width: 80px;
+  display: inline-block;
+  vertical-align: middle;
+}
 
-   #Recipe {
-    margin: 530px 720px 0 0;
-    float: right;
-    font-size: 18px;
-    padding: 10px 40px; /* this controls width and height of button */
+/* NAVIGATION BAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+}
 
-   }
+.navbar .nav-items {
+  display: flex;
+  gap: 10px;
+}
 
-   .hidden {
-    visibility: hidden;
-   }  
+.navbar button {
+  background-color: #f8f8f8;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
 
-   #button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 32px; /* this controls width and height of button */
-   }
-   
-   #output {
-    background-color: white;
-    margin: 10px auto;
-    padding: 10px;
-    border-radius: 15px;
-    border: solid 1px black;
-    min-height: 100px;
-  }
-  #output1 {
-    background-color: white;
-    margin: 10px auto;
-    padding: 10px;
-    border-radius: 15px;
-    border: solid 1px black;
-    min-height: 100px;
-  }
+.navbar button:hover {
+  background-color: rgb(216, 216, 216);
+}
+/* NAV BAR END */
 
-  .box{
-    width: 200px;
-    height: 350px;
-    background-color: #333;
-    position: relative;
-    overflow: hidden;
-    visibility:hidden;
-  }
-  
-  .paper{
-    width: 180px;
-    height: 100px;
-    background-color: #fff;
-    position: absolute;
-    bottom:-100%;
-    left: 10px;
-    transition: bottom 1s ease-in-out;
-    visibility:visible;
-    z-index: 1;
-  }
-  
+#recipe-box {
+  max-width: 400px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -80px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#output {
+  background-color: white;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 15px;
+  border: solid 1px black;
+  min-height: 100px;
+}
+
+#output1 {
+  background-color: white;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 15px;
+  border: solid 1px black;
+  min-height: 100px;
+}
+
+.box {
+  width: 200px;
+  height: 350px;
+  background-color: #333;
+  position: relative;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.paper {
+  width: 180px;
+  height: 100px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -100%;
+  left: 10px;
+  transition: bottom 1s ease-in-out;
+  visibility: visible;
+  z-index: 1;
+}

@@ -4,30 +4,41 @@
 	<meta charset="UTF-8"/>
     <title>Recipe Generator</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css\page.css">
+	<link rel="stylesheet" type="text/css" href="css/recipeGenerator.css">
+	
+	<script src="js/recipeGenerator.js" defer></script>
     <script src="js\page.js" DEFER></script>
 </head>
 <body>
 	<main id="content">
-		<section>
-            <img id="food-logo" src="img\food-logo.jpg"> 
-			<h1>Recipe Generator</h1>
-			<div class="minor-section">
-					<!-- Note that all filenames use lowercase and no spaces -->
-					<div class="box">
-						<div class="paper"></div>
-					</div>
-					<img id="recipe-box" src="img\recipe-box.png"> 
-					<button id="Recipe">Recipe</button>
-					<h3 class="hidden">About Me</h3>
-					<h3 class="hidden">Test Line</h3>
-					<p class="hidden">My name is Isaiah Arreola a second-year art in game design major, my hobbies include drawing and playing video games.</p>
-					<p class="hidden">I am taking this course as an eddlective for my major and I have some experience in coding from high school.</p>
-					<p class="hidden">I am looking forward to learning some new programming skills through this course.</p>	
-					<button id="Recipes">Recipes</button>	
-					<button id="About">About</button>
-					<button id="Resources">Resources</button>
+        <header class="navbar">
+            <div class="nav-brand">
+                <img id="food-logo" src="img/food-logo.jpg" alt="Food Logo">
+                <h1>Recipe Generator</h1>
+            </div>
+            <div class="nav-items">
+                <button id="Recipes">Recipes</button>
+                <button id="About">About</button>
+                <button id="Resources">Resources</button>
+            </div>
+        </header>
+			<!-- New Recipe Generator Section -->
+			<div id="recipe-generator">
+				<div id="recipe-box">
+					<img src="img/recipe-box.png" alt="Recipe Box">
+					<div id="recipe-output"></div>
+					<button id="generate-recipe">Generate Recipe</button>
+				</div>
+
+				<!-- Note that all filenames use lowercase and no spaces -->
+				<div class="box">
+					<div class="paper"></div>
+				</div>
+
+       	<section>
 					<div id="output" style="display:none">
 						<h2>Recipes</h2>
 						<div style="display: inline-block; padding-right: 20px;">
@@ -38,6 +49,7 @@
 							<p>Ingredients: Parmesan, basil, garlic, pine nuts, olive oil,</p> 
 							<p>mayonnaise, pasta, bocconcini, cherry tomatoes, rocket</p>
 						  </div>
+
 						  <div style="display: inline-block; padding-left: 20px;">
 							<p1><a href="https://pescetarian.kitchen/udon-noodle-soup/">Vegetarian Udon Noodle Soup</a></p1>
 							<p>Cook Time: 24 minutes</p>
@@ -47,7 +59,9 @@
 							<p>celery sticks, scallions, broccoli, mushrooms, water chestnuts,</p>
 							<p>soy sauce, teriyaki sauce, vegetable stock, udon noodles, cilantro</p>
 						  </div>
+
 						  <div style="display: inline-block; padding-left: 60px;">
+
 							<p1><a href="https://pescetarian.kitchen/thai-vegetable-massaman-curry/">Thai Vegetable Massaman Curry</a></p1>
 							<p>Cook Time: 40 minutes</p>
 							<p>Diet: Pescatarian</p>
@@ -56,6 +70,7 @@
 							<p>coriander, nutmeg, turmeric, cumin, vegetable oil, soy sauce, fish sauce, bay leaf, </p>
 							<p>coconut cream, coconut milk, white potatoes, shallots, cashew nuts</p>
 						  </div>
+
 						  <div>
 							<p1><a href="https://pescetarian.kitchen/sauteed-garlic-calamari/">Sauteed Garlic Calamari</a></p1>
 							<p>Cook Time: 18 minutes</p>
@@ -64,7 +79,9 @@
 							<p>Ingredients: olive oil, garlic, chili flakes, parsley,</p> 
 							<p>squid, salt, black pepper, lemon juice & zest</p>
 						  </div>
+
 					</div>
+					
 					<div id="output1" style="display:none">
 						<h2>About Us</h2>
 						<div style="display: inline-block; padding-right: 20px;">
