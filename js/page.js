@@ -20,6 +20,10 @@ document.getElementById("Recipes").addEventListener("click", function() {
   
     // Set the transition property to none to prevent initial animation
     paper.style.transition = 'none';
+
+    // Make the paper element visible and fully opaque
+    paper.style.visibility = 'visible';
+    paper.style.opacity = '1';
   
     // Set the initial position of the paper element below the viewport
     paper.style.bottom = bottomPosition + '1px';
@@ -34,9 +38,23 @@ document.getElementById("Recipes").addEventListener("click", function() {
     paper.style.bottom = bottomPosition + 'px';
   });
   
-  
-  
-  
-
+  // Array of all recipe URLS
+  const urls = [
+    'https://www.recipetineats.com/pesto-pasta-salad/',
+    'https://pescetarian.kitchen/udon-noodle-soup/',
+    'https://pescetarian.kitchen/thai-vegetable-massaman-curry/',
+    'https://pescetarian.kitchen/sauteed-garlic-calamari/',
+    // Add more URLs as needed
+  ];
+  // Gets a random URL from the above array, so when the user clicks on the paper it'll redirect them to one of these
+  function getRandomUrl() {
+    const randomIndex = Math.floor(Math.random() * urls.length);
+    return urls[randomIndex];
+  }
+// Event listener for the paper
+document.getElementById('paper').addEventListener('click', function() {
+  const randomUrl = getRandomUrl();
+  window.open(randomUrl, '_blank'); // Open the random URL in a new tab
+});
     
   
