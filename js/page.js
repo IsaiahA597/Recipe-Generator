@@ -6,6 +6,10 @@ document.getElementById("Recipes").addEventListener("click", function() {
     document.getElementById("output1").style.display = "block";
   });
 
+  document.getElementById("Resources").addEventListener("click", function() {
+    document.getElementById("output2").style.display = "block";
+  });
+
   // Slide-In Animation for the paper, will try to optimize so it appears coming out of the box, but I think we'd need to break that image into layers for it to work.
   document.getElementById('recipe-generator').addEventListener('click', function() {
     const paper = document.querySelector('.paper');

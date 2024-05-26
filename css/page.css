@@ -107,6 +107,15 @@ p1 {
   min-height: 100px;
 }
 
+#output2 {
+  background-color: white;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 15px;
+  border: solid 1px black;
+  min-height: 100px;
+}
+
 .box {
   width: 200px;
   height: 350px;
