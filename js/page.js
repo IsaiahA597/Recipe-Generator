@@ -1,3 +1,4 @@
+// event listeners for navbar buttons
 document.getElementById("Recipes").addEventListener("click", function() {
     document.getElementById("output").style.display = "block";
   });
@@ -10,8 +11,8 @@ document.getElementById("Recipes").addEventListener("click", function() {
     document.getElementById("output2").style.display = "block";
   });
 
-  // Slide-In Animation for the paper, will try to optimize so it appears coming out of the box, but I think we'd need to break that image into layers for it to work.
-  document.getElementById('recipe-generator').addEventListener('click', function() {
+  // Slide-In Animation for the recipe box paper, will try to optimize so it appears coming out of the box, but I think we'd need to break that image into layers for it to work.
+  document.getElementById('generate-recipe').addEventListener('click', function() {
     const paper = document.querySelector('.paper');
     const recipeBox = document.getElementById('recipe-box');
   
@@ -46,11 +47,13 @@ document.getElementById("Recipes").addEventListener("click", function() {
     'https://pescetarian.kitchen/sauteed-garlic-calamari/',
     // Add more URLs as needed
   ];
+
   // Gets a random URL from the above array, so when the user clicks on the paper it'll redirect them to one of these
   function getRandomUrl() {
     const randomIndex = Math.floor(Math.random() * urls.length);
     return urls[randomIndex];
   }
+
 // Event listener for the paper
 document.getElementById('paper').addEventListener('click', function() {
   const randomUrl = getRandomUrl();

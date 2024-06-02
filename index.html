@@ -31,9 +31,19 @@
 				<div id="recipe-box">
 					<div class="paper" id="paper">Click Here!</div>
 					<img src="img/recipe-box.png" alt="Recipe Box" class="imgBorder">
-					<button id="generate-recipe">Generate Recipe</button>
+					<button id="generate-recipe">From the Box!</button>
 					<div id="recipe-output"></div>
 				</div>
+				<!-- Separate DIV for the API button, please keep these in their separate containers or objects will overlay. Feel free to comment out this button if we don't end up using it! - Brooke-->
+				<div class="content">
+					<div class="button-container">
+						<h1>‎</h1> <!--Empty character & linebreak for spacing purposes--> <br>
+						<button id="fetch-recipe-button">From the Web!</button>
+					</div>
+					<div id="recipe-container"></div>
+				</div>
+				<!-- API button container cutoff-->
+			</div>
 
        	<section>
 					<div id="output" style="display:none">
