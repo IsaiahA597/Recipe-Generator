@@ -14,7 +14,7 @@
     }
 
     .recipe:hover {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */    
     }
 
     .recipe h2 {
@@ -71,6 +71,8 @@
     }
     #fetch-recipe-button:hover {
       background-color: #f12020; /* Changes button color when hovered over */
+      box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+      font-size: 40px;      
     }
 
     .recipe img {
@@ -104,6 +106,8 @@
 
   #generate-recipe:hover {
     background-color: #f12020; /* Changes button color when hovered over */
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);      
+    font-size: 40px;      
   }
 
   /* button click animation! */
@@ -193,6 +197,10 @@ p1 {
   align-items: center;
   background-color: #f1f1e0;
   padding: 10px 20px;
+  border: #f1f1e0;
+  border-width: 10px;
+  border-style: ridge;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);      
 }
 
 .navbar .nav-items {
@@ -212,6 +220,8 @@ p1 {
 
 .navbar button:hover {
   background-color: rgb(216, 216, 216);
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5); 
+  animation: clickEffect 0.3s ease;     
 }
 /* NAV BAR END */
 
@@ -232,7 +242,9 @@ p1 {
   margin: 10px auto;
   padding: 10px;
   border-radius: 15px;
-  border: solid 1px black;
+  border: #f1f1e0;
+  border-width: 10px;
+  border-style: ridge;
   min-height: 100px;
 }
 
@@ -241,7 +253,9 @@ p1 {
   margin: 10px auto;
   padding: 10px;
   border-radius: 15px;
-  border: solid 1px black;
+  border: #f1f1e0;
+  border-width: 10px;
+  border-style: ridge;
   min-height: 100px;
 }
 
@@ -250,7 +264,9 @@ p1 {
   margin: 10px auto;
   padding: 10px;
   border-radius: 15px;
-  border: solid 1px black;
+  border: #f1f1e0;
+  border-width: 10px;
+  border-style: ridge;
   min-height: 100px;
 }
 
@@ -283,4 +299,17 @@ p1 {
   font-size: 30px;
   color: black;
   text-align: center;
+  border: #ffffff;
+  border-style: groove;
+  border-width: 10px;
+  box-shadow: 0 15px 4px rgba(0, 0, 0, 0.2); 
+}
+.paper:hover {
+  box-shadow: 0 30px 8px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */    
+  font-size: 30px;  
+  animation: clickEffect 0.8s ease;      
+}
+
+#food-logo:hover {  
+  animation: clickEffect 0.8s ease;      
 }
