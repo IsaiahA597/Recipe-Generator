@@ -1,7 +1,6 @@
 // recipegenerator.js
 document.getElementById("generate-recipe").addEventListener("click", async function() {
-    const apiKey = ""; // Replace with your actual API key 0c405a12e3d740bab14502c49162eabd
-    const url = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}`;
+    const url = "https://api.spoonacular.com/recipes/random"
     const output = document.getElementById("recipe-output");
     const paper = document.createElement('div');
     paper.className = 'paper';
