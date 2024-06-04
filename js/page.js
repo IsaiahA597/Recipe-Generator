@@ -45,6 +45,9 @@ document.getElementById("Recipes").addEventListener("click", function() {
     'https://pescetarian.kitchen/udon-noodle-soup/',
     'https://pescetarian.kitchen/thai-vegetable-massaman-curry/',
     'https://pescetarian.kitchen/sauteed-garlic-calamari/',
+    'https://www.foodnetwork.com/recipes/food-network-kitchen/creamy-garlicky-shrimp-skillet-3875851',
+    'https://www.foodnetwork.com/recipes/food-network-kitchen/instant-pot-salmon-with-garlic-potatoes-and-greens-3894814',
+    'https://www.foodnetwork.com/recipes/robin-miller/raspberry-chicken-salad-recipe-1945884',
     // Add more URLs as needed
   ];
 
